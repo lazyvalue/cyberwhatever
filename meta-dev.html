@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CYBERWHATEVER</title>
+    <style>
+      body { margin: 0; background: #0b0814; color: #ddd; font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
+      .harness { padding: 12px 16px 80px; }
+      .harness h1 { font-size: 16px; color: #ff2bd6; }
+      .harness h2 { font-size: 13px; color: #00ffd5; margin: 12px 0 4px; }
+      .harness button { margin: 2px; font: inherit; background: #1a1428; color: #ddd; border: 1px solid #444; padding: 4px 8px; cursor: pointer; }
+      .harness button:disabled { opacity: .4; }
+      .harness pre { background: #120d1e; padding: 8px; white-space: pre-wrap; }
+      .dim { color: #888; }
+      .fake-combat { border: 1px solid #333; padding: 8px; }
+    </style>
+  </head>
+  <body>
+    <!-- private dev harness for src/meta (not part of the game build) -->
+    <div id="app"></div>
+    <script type="module" src="/src/meta/dev.tsx"></script>
+  </body>
+</html>

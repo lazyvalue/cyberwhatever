@@ -1,0 +1,21 @@
+{
+  "//": "Headless core (engine, content, sim). Uses nodenext so every relative import must carry its .ts extension; this is what lets `node src/sim/run.ts` run the sim with Node's built-in type stripping and no build step.",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["src/engine", "src/content", "src/sim"]
+}
